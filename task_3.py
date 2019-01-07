@@ -5,18 +5,18 @@ m = []
 for n in range(0, 10):
     m.append(randint(-100, 100))
 print(m)
-max = m[i]
-min = m[i]
+maxx = m[i]
+minn = m[i]
 for i in range(len(m)):
-    if m[i] > max:
-        max = m[i]
-    if m[i] < min:
-        min = m[i]
+    if m[i] > maxx:
+        maxx = m[i]
+    if m[i] < minn:
+        minn = m[i]
 for i in range(len(m)):
-    if m[i] == max:
+    if m[i] == maxx:
         max_i = i
-    if m[i] == min:
+    if m[i] == minn:
         min_i = i
-m[max_i] = min
-m[min_i] = max
+m[max_i] = minn
+m[min_i] = maxx
 print(m)
