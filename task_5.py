@@ -14,3 +14,4 @@ for i in range(len(m)):
 for i in range(len(m)):        
     if m[i] == maxx:
         print(f"Maximum value of all negative elements in array is {maxx} and its index is {i}") 
+
